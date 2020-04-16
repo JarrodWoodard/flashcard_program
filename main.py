@@ -154,7 +154,7 @@ python_flashcards = {
     "dictionary": "An associative array, where arbitrary keys are mapped to values. The keys can be any object with \n"
                   "__hash__() and __eq__() methods. Called a hash in Perl.",
     "dictionary view": "The objects returned from dict.keys(), dict.values(), and dict.items() are called dictionary\n"
-                       " views. They provide a dynamic view on the dictionary’s entries, which means that when \n"
+                       " views. They provide a dynamic view on the dictionary\'s entries, which means that when \n"
                        "the dictionary changes, the view reflects these changes. To force the dictionary view to \n"
                        "become a full list use list(dictview). See Dictionary view objects.",
     "docstring": "A string literal which appears as the first expression in a class, function or module. While \n"
@@ -220,7 +220,7 @@ python_flashcards = {
                  "contains yield expressions for producing a series of values usable in a for-loop or that can \n"
                  "be retrieved one at a time with the next() function."
                  "\nUsually refers to a generator function, but may refer to a generator iterator in some contexts. \n"
-                 "In cases where the intended meaning isn’t clear, using the full terms avoids ambiguity.",
+                 "In cases where the intended meaning isn\'t clear, using the full terms avoids ambiguity.",
     "generator iterator": "An object created by a generator function.\nEach yield temporarily suspends processing, \n"
                           "remembering the location execution state (including local variables and pending \n"
                           "try-statements). When the generator iterator resumes, it picks up where it left off \n"
@@ -254,7 +254,7 @@ python_flashcards = {
                 "a __hash__() method), and can be compared to other objects (it needs an __eq__() method). \n"
                 "Hashable objects which compare equal must have the same hash value.\nHashability makes an \n"
                 "object usable as a dictionary key and a set member, because these data structures use the \n"
-                "hash value internally.\nMost of Python’s immutable built-in objects are hashable; mutable \n"
+                "hash value internally.\nMost of Python\'s immutable built-in objects are hashable; mutable \n"
                 "containers (such as lists or dictionaries) are not; immutable containers (such as tuples and \n"
                 "frozensets) are only hashable if their elements are hashable. Objects which are instances of \n"
                 "user-defined classes are hashable by default. They all compare unequal (except with themselves), \n"
@@ -267,12 +267,12 @@ python_flashcards = {
                  "in a dictionary.",
     "import path": "A list of locations (or path entries) that are searched by the path based finder for modules \n"
                    "to import. During import, this list of locations usually comes from sys.path, but for \n"
-                   "subpackages it may also come from the parent package’s __path__ attribute.",
+                   "subpackages it may also come from the parent package\'s __path__ attribute.",
     "importing": "The process by which Python code in one module is made available to Python code in another module.",
     "importer": "An object that both finds and loads a module; both a finder and loader object.",
     "interactive": "Python has an interactive interpreter which means you can enter statements and expressions \n"
                    "at the interpreter prompt, immediately execute them and see their results. Just launch python \n"
-                   "with no arguments (possibly by selecting it from your computer’s main menu). It is a very \n"
+                   "with no arguments (possibly by selecting it from your computer\'s main menu). It is a very \n"
                    "powerful way to test out new ideas or inspect modules and packages (remember help(x)).",
     "interpreted": "Python is an interpreted language, as opposed to a compiled one, though the distinction can \n"
                    "be blurry because of the presence of the bytecode compiler. This means that source files can \n"
@@ -291,13 +291,13 @@ python_flashcards = {
                 "sequence types (such as list, str, and tuple) and some non-sequence types like dict, file objects, \n"
                 "and objects of any classes you define with an __iter__() method or with a __getitem__() method \n"
                 "that implements Sequence semantics.\nIterables can be used in a for loop and in many other places \n"
-                "where a sequence is needed (zip(), map(), …). When an iterable object is passed as an argument to \n"
+                "where a sequence is needed (zip(), map(), ...). When an iterable object is passed as an argument to \n"
                 "the built-in function iter(), it returns an iterator for the object. This iterator is good for one \n"
                 "pass over the set of values. When using iterables, it is usually not necessary to call iter() or \n"
                 "deal with iterator objects yourself. The for statement does that automatically for you, creating a \n"
                 "temporary unnamed variable to hold the iterator for the duration of the loop. See also iterator, \n"
                 "sequence, and generator.",
-    "iterator": "An object representing a stream of data. Repeated calls to the iterator’s __next__() method \n"
+    "iterator": "An object representing a stream of data. Repeated calls to the iterator\'s __next__() method \n"
                 "(or passing it to the built-in function next()) return successive items in the stream. When no more \n"
                 "data are available a StopIteration exception is raised instead. At this point, the iterator object \n"
                 "is exhausted and any further calls to its __next__() method just raise StopIteration again. \n"
@@ -361,7 +361,7 @@ python_flashcards = {
                    "importlib.machinery.ModuleSpec.",
     "MRO": "See method resolution order.",
     "mutable": "Mutable objects can change their value but keep their id(). See also immutable.",
-    "named tuple": "The term “named tuple” applies to any type or class that inherits from tuple and whose \n"
+    "named tuple": "The term \"named tuple\" applies to any type or class that inherits from tuple and whose \n"
                    "indexable elements are also accessible using named attributes. The type or class may have \n"
                    "other features as well.\nSeveral built-in types are named tuples, including the values returned \n"
                    "by time.localtime() and os.stat(). Another example is sys.float_info:\n>>>"
@@ -388,7 +388,7 @@ python_flashcards = {
                     "both read and write in the innermost scope. Likewise, global variables read and write to \n"
                     "the global namespace. The nonlocal allows writing to outer scopes.",
     "new-style class": "Old name for the flavor of classes now used for all class objects. In earlier Python \n"
-                       "versions, only new-style classes could use Python’s newer, versatile features like __\n"
+                       "versions, only new-style classes could use Python\'s newer, versatile features like __\n"
                        "slots__, descriptors, properties, __getattribute__(), class methods, and static methods.",
     "object": "Any data with state (attributes or value) and defined behavior (methods). Also the ultimate base \n"
               "class of any new-style class.",
@@ -444,7 +444,7 @@ python_flashcards = {
                        "library\'s backwards compatibility guarantees. While major changes to such interfaces are \n"
                        "not expected, as long as they are marked provisional, backwards incompatible changes \n"
                        "(up to and including removal of the interface) may occur if deemed necessary by core \n"
-                       "developers. Such changes will not be made gratuitously – they will occur only if serious \n"
+                       "developers. Such changes will not be made gratuitously - they will occur only if serious \n"
                        "fundamental flaws are uncovered that were missed prior to the inclusion of the API."
                        "\nEven for provisional APIs, backwards incompatible changes are seen as a \"solution of \n"
                        "last resort\" - every attempt will still be made to find a backwards compatible resolution \n"
@@ -460,9 +460,9 @@ python_flashcards = {
                 "languages don\'t have this type of construct, so people unfamiliar with Python sometimes use a \n"
                 "numerical counter instead:\nfor i in range(len(food)):\n    print(food[i])\nAs opposed to the \n"
                 "cleaner, Pythonic method:\nfor piece in food:\n    print(piece)",
-    "qualified name": "A dotted name showing the “path” from a module’s global scope to a class, function or method \n"
-                      "defined in that module, as defined in PEP 3155. For top-level functions and classes, the \n"
-                      "qualified name is the same as the object’s name:\n>>>\n>>> class C:\n...     class D:"
+    "qualified name": "A dotted name showing the \"path\" from a module\'s global scope to a class, function or method"
+                      " \ndefined in that module, as defined in PEP 3155. For top-level functions and classes, the \n"
+                      "qualified name is the same as the object\'s name:\n>>>\n>>> class C:\n...     class D:"
                       "\n...         def meth(self):\n...             pass\n...\n>>> C.__qualname__\n\'C\'"
                       "\n>>> C.D.__qualname__\n\'C.D\'\n>>> C.D.meth.__qualname__\n\'C.D.meth\'\nWhen used to refer \n"
                       "to modules, the fully qualified name means the entire dotted path to the module, including \n"
