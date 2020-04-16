@@ -112,7 +112,7 @@ python_flashcards = {
                       "Python has built-in support for complex numbers, which are written with this latter\n"
                       " notation; the imaginary part is written with a j suffix, e.g., 3+1j. To get access to \n"
                       "complex equivalents of the math module, use cmath. Use of complex numbers is a fairly \n"
-                      "advanced mathematical feature. If you’re not aware of a need for them, it\'s almost certain\n"
+                      "advanced mathematical feature. If you\'re not aware of a need for them, it\'s almost certain\n"
                       " you can safely ignore them.",
     "context manager": "An object which controls the environment seen in a with statement by defining \n"
                        "__enter__() and __exit__() methods. See PEP 343.",
